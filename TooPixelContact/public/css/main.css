@@ -32,3 +32,39 @@ footer p {
     text-shadow: 1px 1px 1px #770100;
     margin:2px;
 }
+.content {
+    position:relative;
+    width:640px;
+    margin:0 auto;
+    top:60px;
+    overflow-x: auto;
+    padding-left:10px;
+    padding-right:10px;
+}
+header .left-part {
+    float:left;
+    width:50%;
+}
+header .right-part {
+    float:right;
+    width:50%;
+}
+header .right-part ul {
+    position:absolute;
+    right:10px;
+}
+header .right-part ul li {
+    list-style-type: none;
+    float:left;
+    margin-left:4px;
+    margin-right: 4px;
+}
+header .right-part ul li a {
+    color: #C40D0D;
+    font-weight: 600;
+    text-decoration: none;
+}
+header .right-part ul li a.active {
+    color: #333;
+    font-weight: 300;
+}

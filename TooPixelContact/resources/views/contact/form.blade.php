@@ -2,4 +2,4 @@
 
 @section('content')
     TEST
-@endsection
+@stop

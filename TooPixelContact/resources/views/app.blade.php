@@ -8,8 +8,14 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="left-part">
             <a href="/" ><img src="{{ URL::asset('logo_en.png') }}" alt="logo"/></a>
+        </div>
+        <div class="right-part">
+            <ul>
+                <li><a href="#">EN</a></li>
+                <li><a href="#">FR</a></li>
+            </ul>
         </div>
 
     </header>

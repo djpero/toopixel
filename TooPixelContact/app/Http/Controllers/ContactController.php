@@ -17,8 +17,11 @@ class ContactController extends Controller
     public function index()
     {
         //
-        
+
         return view("contact.form");
+    }
+    public function finish() {
+        return view("contact.finish");
     }
 
     /**
