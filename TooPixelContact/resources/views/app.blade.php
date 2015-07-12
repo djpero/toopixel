@@ -17,7 +17,7 @@
         @yield('content')
     </div>
     <footer>
-        Pero
+        <p>Pero Knezevic</p>
     </footer>
 </body>
 </html>
