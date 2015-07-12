@@ -9,4 +9,5 @@
         'image' => 'Image',
         'send' => 'SEND',
         'contact_us' => 'Contact Us',
+        'will_contact_you' => 'we\'ll contact you soon',
     );
