@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Session;
 
 class LanguageController extends Controller
 {
@@ -18,7 +19,10 @@ class LanguageController extends Controller
     {
         //
     }
-
+    public function choose($lang) {
+        Session::put('language', $lang);
+        return redirect('/');
+    }
     /**
      * Show the form for creating a new resource.
      *

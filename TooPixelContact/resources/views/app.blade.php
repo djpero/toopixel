@@ -13,8 +13,8 @@
         </div>
         <div class="right-part">
             <ul>
-                <li><a href="#">EN</a></li>
-                <li><a href="#">FR</a></li>
+                <li><a href="/language/choose/en">EN</a></li>
+                <li><a href="/language/choose/fr">FR</a></li>
             </ul>
         </div>
 

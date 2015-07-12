@@ -14,3 +14,4 @@
 Route::get('/', 'ContactController@index');
 Route::post('/contact/send', 'ContactController@send');
 Route::post('/contact/finish', 'ContactController@send');
+Route::get('/language/choose/{lang}', ['uses' => 'LanguageController@choose']);
