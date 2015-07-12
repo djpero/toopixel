@@ -15,4 +15,11 @@
     {!! Form::file('attachment', null) !!}
     {!! Form::submit(Lang::get('localization.send')) !!}
     {!! Form::close() !!}
+    @if ($errors->any())
+        <div class="errors-container">
+            @foreach($errors->all() as $error)
+                <p class="form-errors">{{ $error }}</p>
+            @endforeach
+        </div>
+    @endif
 @stop

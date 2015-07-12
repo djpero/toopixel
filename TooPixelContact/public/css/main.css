@@ -170,3 +170,15 @@ input[type="submit"]:focus {
 p.center {
     text-align:center;
 }
+.errors-container {
+    background-color: #ffdada;
+    border-radius:3px;
+    border: 2px solid #C40D0D;
+}
+.errors-container .form-errors {
+    margin-bottom:2px;
+    margin-top:2px;
+    font-size:10px;
+    padding-left:10px;
+    color: #C40D0D;
+}
