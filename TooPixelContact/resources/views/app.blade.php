@@ -5,6 +5,8 @@
     <title>TooPixel Contact Page</title>
 </head>
 <body>
-    TEST
+    <div class="content">
+        @yield('content')
+    </div>
 </body>
 </html>
