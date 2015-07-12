@@ -26,7 +26,7 @@ class ContactController extends Controller
         return view("contact.finish");
     }
 
-    public function send(){
+    public function send(Requests\SendEmailRequest $request){
         $input = Request::all();
         Mail::send('emails.thank_you', $input, function($message) use ($input)
         {
