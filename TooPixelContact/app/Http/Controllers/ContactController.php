@@ -28,6 +28,14 @@ class ContactController extends Controller
 
     public function send(){
         $input = Request::all();
+        Mail::send('emails.thank_you', $input, function($message) use ($input)
+        {
+            $message->from($input['email'], $input['name']. ' ' .$input['surname']);
+            $message->to('djpero.84@gmail.com')->subject('Contact from TooPixel Contact Page');
+            $message->attach($input['attachment']->getRealPath(), array(
+                'as' => $input['attachment']->getClientOriginalName(),
+                'mime' => $input['attachment']->getMimeType()));
+        });
         $name = $input['name'];
         $surname = $input['surname'];
         return view('contact/finish', compact('name','surname'));
