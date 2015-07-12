@@ -5,3 +5,30 @@ html,body {
     font-weight: 300;
     color:#444;
 }
+header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color:rgba(253,252,252,0.86);
+    border-bottom:2px solid #eee;
+    height:52px;
+    z-index:101;
+}
+header img {
+    padding: 6px 0px 3px 6px;
+}
+footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color: #C40D0D;
+    border-top:2px solid #820000;
+}
+footer p {
+    color: #e4a5a0;
+    text-align: center;
+    text-shadow: 1px 1px 1px #770100;
+    margin:2px;
+}
