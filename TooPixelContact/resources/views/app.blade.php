@@ -13,8 +13,8 @@
         </div>
         <div class="right-part">
             <ul>
-                <li><a href="/language/choose/en">EN</a></li>
-                <li><a href="/language/choose/fr">FR</a></li>
+                <li><a class="@if($value === 'en') active @endif" href="/language/choose/en">EN</a></li>
+                <li><a class="@if($value === 'fr') active @endif" href="/language/choose/fr">FR</a></li>
             </ul>
         </div>
 

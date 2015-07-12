@@ -19,7 +19,12 @@ class ContactController extends Controller
      */
     public function index()
     {
-        return view("contact.form");
+        if (Session::has('language')) {
+            $value = Session::get('language');
+        } else {
+            $value = 'en';
+        }
+        return view("contact.form", compact('value'));
     }
     public function finish() {
 
@@ -38,7 +43,12 @@ class ContactController extends Controller
         });
         $name = $input['name'];
         $surname = $input['surname'];
-        return view('contact/finish', compact('name','surname'));
+        if (Session::has('language')) {
+            $value = Session::get('language');
+        } else {
+            $value = 'en';
+        }
+        return view('contact/finish', compact('name','surname','value'));
     }
     /**
      * Show the form for creating a new resource.
