@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Request;
+use Mail;
+use Illuminate\Support\Facades\Lang;
+use Illuminate\Support\Facades\Session;
+
 
 class ContactController extends Controller
 {
@@ -16,14 +19,19 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
-
         return view("contact.form");
     }
     public function finish() {
+
         return view("contact.finish");
     }
 
+    public function send(){
+        $input = Request::all();
+        $name = $input['name'];
+        $surname = $input['surname'];
+        return view('contact/finish', compact('name','surname'));
+    }
     /**
      * Show the form for creating a new resource.
      *

@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'ContactController@index');
+Route::post('/contact/send', 'ContactController@send');
+Route::post('/contact/finish', 'ContactController@send');
